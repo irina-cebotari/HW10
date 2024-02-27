@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+/* ex1 */
+
+:root {
+    font-size: 32px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+
+/* ex2 */
+
+.container {
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+    padding: 16px;
+    background-image: url(https://wallpapercrafter.com/desktop/11737-desert-sand-dunes-relief-sky-4k.jpg);
+    color: #e8cbae;
+    text-align:inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+}
