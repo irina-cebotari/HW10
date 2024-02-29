@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 :root {
     font-size: 16px;
 }
@@ -7,17 +9,20 @@ body {
 }
 
 .container {
-    height: 100vh;
-    width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 10px 5px;
+    grid-template-areas:
+        'header header header'
+        'sidebar content content'
+        'footer footer footer';
+    grid-template-columns: 20vw 40vw 40vw;
+    grid-template-rows: 110px calc(100vh - 220px) 110px;
 }
 
-.header {
-    grid-column: 1/3;
-    grid-row: 1/2;
+.pageHeader {
+    grid-area: header;
+    position: relative;
     padding: 25px;
+    background-color: #a67b5b;
     display: flex;
     justify-content: right;
     align-items: end;
@@ -32,84 +37,184 @@ body {
     border: none;
     padding: 16px;
     text-decoration: none;
-    color: #a67b5b;
+    color: #f5f5dc;
+    font-family: "Gentium Plus", serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 .button:hover {
     cursor: pointer;
-    border-bottom: 1px solid #6d4d41;
-    color: #6d4d41;
+    border-bottom: 1px solid #f5f5dc;
 }
 
 .logIn {
-    background-color: #a67b5b;
+    background-color: #f5f5dc;
     border-radius: 8px;
     font-weight: 500;
-    padding:  16px;
-    color: #f5f5dc;
+    padding: 16px;
+    color: #6d4d41;
 }
 
-.sidebar {
-    grid-column: 1/2;
-    grid-row: 2/3;
+.pageSidebar {
+    grid-area: sidebar;
+    width: 250px;
     padding: 25px;
-    height: 700px;
+    border-right: 1px solid #a67b5b;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 24px;
 }
 
+.menuTitle {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #a67b5b;
+    font-family: "Gentium Plus", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
 .sidebarElem {
     width: 200px;
     height: 32px;
     padding: 8px;
-    font-size: 18px;
+    font-size: 16px;
     border: none;
+    border-left: 1px solid #a67b5b;
     text-decoration: none;
     color: #a67b5b;
+    font-family: "Gentium Plus", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .sidebarElem:hover {
     cursor: pointer;
+    border-left: none;
     border-bottom: 1px solid #6d4d41;
-    font-weight: 600;
     color: #6d4d41;
-    }
+    font-family: "Gentium Plus", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.pageContent {
+    grid-area: content;
+    margin: 0;
+    margin-right: 70px;
+    text-align: center;
+}
+
+.headingContent {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 16px;
+    color: #6d4d41;
+    font-family: "Gentium Plus", serif;
+    font-weight: 900;
+    font-style: normal;
+}
 
 .main {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    padding-right: 62px;
-    height: 700px;
+    display: flex;
+    align-content: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.title {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.5rem;
-    color: #6d4d41;
+.post {
+    width: 150px;
+    color: white;
 }
 
-.subtitle {
-    color: #a67b5b;
+.card1 {
+    position: relative;
+    height: 480px;
+    width: 310px;
+    background-image: url('./media/store1.jpg');
+    background-size: cover;
+    background-color: gray;
+    background-blend-mode: multiply;
+    border-radius: 10%;
+    padding: 16px;
 }
 
-.footer {
-    grid-column: 1/3;
-    grid-row: 3/4;
-    padding: 25px;
-    background-color: #a67b5b;
-    color: wheat;
+.card2 {
+    position: relative;
+    height: 480px;
+    width: 310px;
+    background-image: url('./media/store2.jpg');
+    background-size: cover;
+    background-color: gray;
+    background-blend-mode: multiply;
+    border-radius: 10%;
+    padding: 16px;
 }
 
-.iconLink {
-    text-decoration: none;
-    color: wheat;
+.card3 {
+    position: relative;
+    height: 480px;
+    width: 310px;
+    background-image: url('./media/store3.jpg');
+    background-size: cover;
+    background-color: gray;
+    background-blend-mode: multiply;
+    border-radius: 10%;
+    padding: 16px;
+}
+
+.card4 {
+    position: relative;
+    height: 480px;
+    width: 310px;
+    background-image: url('./media/store4.jpg');
+    background-size: cover;
+    background-color: gray;
+    background-blend-mode: multiply;
+    border-radius: 10%;
+    padding: 16px;
+}
+
+.headingPost {
+    position: absolute;
+    text-align: left;
+    bottom: 45%;
+    font-family: "Gentium Plus", serif;
+    font-weight: 900;
+    font-style: normal;
     padding: 8px;
 }
 
-.iconLink:hover {
+.contentPost {
+    position: absolute;
+    text-align: left;
+    bottom: 0;
+    font-family: "Gentium Plus", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 8px;
+}
+
+.pageFooter {
+    grid-area: footer;
+    padding: 10px 25px;
+    background-color: #a67b5b;
+    color: #f5f5dc;
+    font-family: "Gentium Plus", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.smLink {
+    text-decoration: none;
+    color: #f5f5dc;
+    padding: 8px;
+}
+
+.smLink:hover {
     cursor: pointer;
-    border-bottom: 1px solid wheat;
+    border-bottom: 1px solid #f5f5dc;
 }
