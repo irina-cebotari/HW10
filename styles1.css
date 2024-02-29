@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
     font-size: 16px;
@@ -38,7 +39,8 @@ body {
     padding: 16px;
     text-decoration: none;
     color: #f5f5dc;
-    font-family: "Gentium Plus", serif;
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 
@@ -72,8 +74,9 @@ body {
     font-size: 24px;
     text-transform: uppercase;
     color: #a67b5b;
-    font-family: "Gentium Plus", serif;
-    font-weight: 900;
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -86,7 +89,8 @@ body {
     border-left: 1px solid #a67b5b;
     text-decoration: none;
     color: #a67b5b;
-    font-family: "Gentium Plus", serif;
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
@@ -96,8 +100,9 @@ body {
     border-left: none;
     border-bottom: 1px solid #6d4d41;
     color: #6d4d41;
-    font-family: "Gentium Plus", serif;
-    font-weight: 700;
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -113,7 +118,8 @@ body {
     text-transform: uppercase;
     padding: 16px;
     color: #6d4d41;
-    font-family: "Gentium Plus", serif;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
 }
@@ -134,77 +140,81 @@ body {
     position: relative;
     height: 480px;
     width: 310px;
+    padding: 16px;
     background-image: url('./media/store1.jpg');
     background-size: cover;
     background-color: gray;
     background-blend-mode: multiply;
     border-radius: 10%;
-    padding: 16px;
 }
 
 .card2 {
     position: relative;
     height: 480px;
     width: 310px;
+    padding: 16px;
     background-image: url('./media/store2.jpg');
     background-size: cover;
     background-color: gray;
     background-blend-mode: multiply;
     border-radius: 10%;
-    padding: 16px;
 }
 
 .card3 {
     position: relative;
     height: 480px;
     width: 310px;
+    padding: 16px;
     background-image: url('./media/store3.jpg');
     background-size: cover;
     background-color: gray;
     background-blend-mode: multiply;
     border-radius: 10%;
-    padding: 16px;
 }
 
 .card4 {
     position: relative;
     height: 480px;
     width: 310px;
+    padding: 16px;
     background-image: url('./media/store4.jpg');
     background-size: cover;
     background-color: gray;
     background-blend-mode: multiply;
-    border-radius: 10%;
-    padding: 16px;
+    border-radius: 10%; 
 }
 
 .headingPost {
     position: absolute;
     text-align: left;
-    bottom: 45%;
-    font-family: "Gentium Plus", serif;
-    font-weight: 900;
-    font-style: normal;
     padding: 8px;
+    bottom: 35%;
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .contentPost {
     position: absolute;
+    padding: 8px;
     text-align: left;
+    line-height: 20px;
     bottom: 0;
-    font-family: "Gentium Plus", serif;
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    padding: 8px;
 }
 
 .pageFooter {
     grid-area: footer;
-    padding: 10px 25px;
+    padding: 25px;
     background-color: #a67b5b;
     color: #f5f5dc;
-    font-family: "Gentium Plus", serif;
-    font-weight: 700;
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
 }
 
